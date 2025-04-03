@@ -38,4 +38,10 @@ class CursoController extends Controller
         return "La división de $a / $b es: $resultado";
     }
 
+    public function index()
+    {
+        $name = 'Azael';
+        return view('layout.child', compact('name'));
+    }
+
 }
